@@ -5,8 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import Greetings from "../components/utilities/greetings"
-
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -32,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
         <div>
           <div class="md:py-32 py-12">
               <div class="md:pb-20 pb-12 mx-auto text-left font-family-sans ">
-                  <h2 class="md:text-6xl text-3xl text-black dark:text-white font-bold mb-4"><span className="text-2xl md:text-5xl text-gray-800"><Greetings/> 👋</span><br/>I'm Ridwan, Global Engineering student at Kyoto University</h2>
+                  <h2 class="md:text-6xl text-3xl text-black dark:text-white font-bold mb-4"><span className="text-2xl md:text-5xl text-gray-800">Hi! 👋</span><br/>I'm Ridwan, Global Engineering student at Kyoto University</h2>
                   <p class="text-lg text-gray-600 dark:text-gray-400">Welcome to my personal website. I will use this site as a platform to share my thoughts and showcase the projects that I’m currently doing/I’ve done in the past.</p>
                   <div className="inline-flex space-x-2">
                     <button className="bg-gray-800 hover:bg-gray-600 text-white text-sm sm:text-md font-bold my-8 py-2 px-4 rounded">
