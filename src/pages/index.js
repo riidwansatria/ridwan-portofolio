@@ -49,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
         </div>
         <Seo title="Home" />
         <div className="mb-8 pb-4 border-b-2 flex justify-between items-center">
-          <h2 className="md:text-4xl text-2xl flex">📝 Latest Posts</h2>
+          <h2 className="md:text-4xl text-2xl font-semibold flex">📝 Latest Posts</h2>
           <div className="flex">
             <a href="/blog" className="sm:text-md text-sm text-gray-600 p-4">Read all posts →</a>
           </div>
@@ -88,7 +88,7 @@ const BlogIndex = ({ data, location }) => {
           })}
         </ol>
 
-        <h2 className="md:text-4xl text-2xl mb-8 pt-24 pb-4 border-b-2">🕹️ Projects</h2>
+        <h2 className="md:text-4xl text-2xl font-semibold mb-8 pt-24 pb-4 border-b-2">🕹️ Projects</h2>
         <ol className="space-y-4">
           <li>
             <h3 className="text-gray-800 md:text-2xl text-xl">

@@ -36,34 +36,46 @@ const ContactPage = () => {
                 <div hidden>
                   <input name="bot-field"/>
                 </div>
-                <label className="col-span-1">
+                <div className="col-span-1">
+                  <label>
+                    <input
+                      type="text"
+                      name="first-name"
+                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
+                      placeholder="First Name"
+                    />
+                  </label>
+                </div>
+                <div className="col-span-1">
+                  <label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
+                      placeholder="Last Name"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div className="col-span-1">
+                <label>
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
-                    placeholder="First Name"
-                  />
-                </label>
-                <label className="col-span-1">
-                  <input
-                    type="text"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
-                    placeholder="Last Name"
+                    placeholder="Email Address"
                   />
                 </label>
               </div>
-              <label class="block">
-                <input
-                  type="email"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
-                  placeholder="Email Address"
-                />
-              </label>
-              <label class="block">
-                <textarea
-                  class="mt-1 block w-full h-48 rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
-                  rows="3" placeholder="Message"
-                ></textarea>
-              </label>
+              <div class="block">
+                <label>
+                  <textarea
+                    name="message"
+                    class="mt-1 block w-full h-48 rounded-md border-gray-300 shadow-sm focus:border-lemon focus:ring focus:ring-lemon focus:ring-opacity-50"
+                    rows="3" placeholder="Message"
+                  ></textarea>
+                </label>
+              </div>
               <div data-netlify-recaptcha="true"></div>
               <div>
                 <button type="submit" className="bg-gray-800 hover:bg-gray-600 text-white text-sm sm:text-md font-bold py-2 px-4 rounded-md">Submit →</button>
