@@ -29,7 +29,7 @@ const ContactPage = () => {
           </div>
           <div className="col-span-1">
             <h3 className="md:hidden md:text-3xl text-2xl font-semibold m-2">Contact Form</h3>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" action="POST" data-netlify="true">
             <div class="grid grid-cols-1 md:gap-6 gap-4">
               <div class="grid grid-cols-2 md:gap-6 gap-4">
                 <label className="col-span-1">
@@ -60,6 +60,7 @@ const ContactPage = () => {
                   rows="3" placeholder="Message"
                 ></textarea>
               </label>
+              <div data-netlify-recaptcha="true"></div>
               <div>
                 <button type="submit" className="bg-gray-800 hover:bg-gray-600 text-white text-sm sm:text-md font-bold py-2 px-4 rounded-md">Submit →</button>
               </div>
