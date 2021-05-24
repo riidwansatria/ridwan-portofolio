@@ -29,9 +29,13 @@ const ContactPage = () => {
           </div>
           <div className="col-span-1">
             <h3 className="md:hidden md:text-3xl text-2xl font-semibold m-2">Contact Form</h3>
-            <form name="contact" action="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
             <div class="grid grid-cols-1 md:gap-6 gap-4">
               <div class="grid grid-cols-2 md:gap-6 gap-4">
+                <input type="hidden" name="form-name" value="contact"></input>
+                <div hidden>
+                  <input name="bot-field"/>
+                </div>
                 <label className="col-span-1">
                   <input
                     type="text"
