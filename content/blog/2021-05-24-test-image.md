@@ -3,7 +3,6 @@ title: Test image
 date: 2021-05-24T10:31:28.164Z
 featuredImage: /images/uploads/bentang-alam-eolian-yardang-american-geophysical-union.jpg
 description: test test image
-featuredImage: 
 ---
 ## Important Points
 
