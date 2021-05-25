@@ -1,22 +1,21 @@
 ---
 title: Test image
 date: 2021-05-24T10:31:28.164Z
+featuredImage: /images/uploads/bentang-alam-eolian-yardang-american-geophysical-union.jpg
 description: test test image
 ---
-![Yardang](/images/uploads/bentang-alam-eolian-yardang-american-geophysical-union.jpg)
-
 ## Important Points
 
 - - -
 
-*  grain size
-*  deflation abrasion
-*  Gurun
-*  Definisi dan ciri-ciri gurun
-*  Proses-proses di gurun
-*  Bentang alam di gurun
-*  Manfaat bentang alam eolian
-*  Sand dunes
+* grain size
+* deflation abrasion
+* Gurun
+* Definisi dan ciri-ciri gurun
+* Proses-proses di gurun
+* Bentang alam di gurun
+* Manfaat bentang alam eolian
+* Sand dunes
 
 ## Structure
 
