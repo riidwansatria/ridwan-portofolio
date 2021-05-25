@@ -6,7 +6,7 @@ const Footer = () => {
       <main className="container text-sm sm:text-base pt-4 border-t-2">
         © {new Date().getFullYear()} Ridwan Satria. Powered by
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby ⚡.</a>
+        <a href="https://www.gatsbyjs.com">Gatsby <span role="img" aria-label="lightning">⚡</span>.</a>
       </main>
     </body>
   )

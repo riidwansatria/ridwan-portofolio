@@ -15,6 +15,20 @@ module.exports = {
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -134,6 +148,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-images`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,

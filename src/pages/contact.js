@@ -16,7 +16,7 @@ const ContactPage = () => {
             <p className="text-lg text-gray-500 m-2">
               Contact me here. Either fill out the form on this page or find one of the other contact methods listed below to reach me that way.
             </p>
-            <p><a href="mailto:hi@ridwansatria.com" className="font-semibold m-2">hi@ridwansatria.com</a></p>
+            <p><a href="mailto:ridwan@supergeografi.com" className="font-semibold m-2">ridwan@supergeografi.com</a></p>
             <div className="flex flex-wrap">
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://github.com/riidwansatria">Github</a>
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://facebook.com/">Facebook</a>
