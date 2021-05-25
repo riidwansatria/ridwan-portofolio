@@ -2,9 +2,9 @@
 title: Test image
 date: 2021-05-24T10:31:28.164Z
 description: test test image
-featuredImage: /src/images/gatsby-icon.png
+featuredImage: 
 ---
-![Yardang](/images/uploads/bentang-alam-eolian-yardang-american-geophysical-union.jpg)
+
 
 ## Important Points
 
