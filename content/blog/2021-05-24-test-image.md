@@ -5,11 +5,6 @@ featuredImage: /images/uploads/bentang-alam-eolian-yardang-american-geophysical-
 description: test test image
 featuredImage: 
 ---
-<<<<<<< HEAD
-
-
-=======
->>>>>>> a4035cec59fb52a7b138ecf39a120603b0906e95
 ## Important Points
 
 - - -
