@@ -13,6 +13,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-DGMH4FNTTS",
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-mdx`,
@@ -69,12 +77,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',
     'gatsby-plugin-typescript',
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-272804153`,
-      },
-    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
