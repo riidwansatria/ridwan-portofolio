@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import logo from '/src/images/logo.png'
 import ContactIcons from '../components/contactIcons'
 
 const navigation = [
-  { name: 'About', href: '/about', current: false },
-  { name: 'Blog', href: '/blog', current: false },
-  { name: 'Projects', href: '/projects', current: false },
-  { name: 'Contact', href: '/contact', current: false },
+  { name: 'About', to: '/about', current: false },
+  { name: 'Blog', to: '/blog', current: false },
+  { name: 'Projects', to: '/projects', current: false },
+  { name: 'Contact', to: '/contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -36,22 +37,22 @@ export default function Example() {
                 </div>
                 <div className="flex flex-1 sm:justify-start align-middle">
                   <div className="flex-none">
-                    <a href="/">
+                    <Link to="/">
                       <img
                         className="inline mx-4 h-16 w-16"
                         src={logo}
                         alt="Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="flex flex-1 object-left">
                     <div className="hidden sm:flex sm:flex-grow sm:ml-6">
                       <div className="flex flex-none space-x-0">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
-                            href={item.href}
+                            to={item.to}
                             className={classNames(
                               item.current ? 'bg-gray-900 text-white' : 'text-gray-800 hover:bg-gray-200',
                               'px-3 py-2 my-auto rounded-md text-base uppercase items-center font-semibold tracking-wider'
@@ -59,7 +60,7 @@ export default function Example() {
                             aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                       <div className="flex flex-grow my-auto">
@@ -75,9 +76,9 @@ export default function Example() {
             <Disclosure.Panel className="sm:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.to}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'flex text-gray-800 hover:bg-gray-200',
                       'inline px-3 py-2 rounded-md text-base font-medium'
@@ -85,7 +86,7 @@ export default function Example() {
                     aria-current={item.current ? 'page' : undefined}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </Disclosure.Panel>

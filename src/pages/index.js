@@ -34,14 +34,14 @@ const BlogIndex = ({ data, location }) => {
                   <p class="text-lg text-gray-600 dark:text-gray-400">Welcome to my personal website. This site will be used as a platform to share my thoughts and showcase the projects that I’m currently doing/I’ve done in the past.</p>
                   <div className="inline-flex space-x-2">
                     <button className="bg-gray-800 hover:bg-gray-600 text-white text-sm sm:text-md font-bold my-8 py-2 px-4 rounded">
-                      <a href="/blog">
+                      <Link to="/blog">
                         Go to Blog →
-                      </a>
+                      </Link>
                     </button>
                     <button className="bg-white hover:bg-lemon text-gray-800 text-sm sm:text-md font-bold my-8 py-2 px-4 border-2 border-gray-200 hover:border-lemon rounded">
-                      <a href="/about">
+                      <Link to="/about">
                         About Me
-                      </a>
+                      </Link>
                     </button>
                   </div>
               </div>
@@ -51,7 +51,7 @@ const BlogIndex = ({ data, location }) => {
         <div className="mb-8 pb-4 border-b-2 flex justify-between items-center">
           <h2 className="md:text-4xl text-2xl font-semibold flex">📝 Latest Posts</h2>
           <div className="flex">
-            <a href="/blog" className="sm:text-md text-sm text-gray-600 p-4">Read all posts →</a>
+            <Link to="/blog" className="sm:text-md text-sm text-gray-600 p-4">Read all posts →</Link>
           </div>
         </div>
         

@@ -1,5 +1,6 @@
 // Step 1: Import your component
 import * as React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from "../components/seo"
 
@@ -20,7 +21,7 @@ const AboutPage = () => {
             <li>🌏 During my high school-university break, I started a geography reference blog, <a href="https://supergeografi.com/">Supergeografi</a>. I wrote all of the articles and manages the technical side of the website.</li>
             <li>📜 At <a href="https://edufia.net/">Edufia</a>  , an olympiad education startup, I managed the EduClass product and responsible for mentor-related affairs. </li>
             <li><svg className="inline md:h-6 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path fill="#DC1F26" d="M32 5H4C1.791 5 0 6.791 0 9v9h36V9c0-2.209-1.791-4-4-4z"/><path fill="#EEE" d="M36 27c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4v-9h36v9z"/></svg> I’m part of the Indonesian Students' Association in Japan (PPIJ), serving in the website development division.</li>
-            <li>🏫 I’m open to teach geography. I can be reached by email or through <a href="/contact">my social media</a>.️</li>
+            <li>🏫 I’m open to teach geography. I can be reached by email or through <Link to="/contact">my social media</Link>.️</li>
           </ol>
 
           <h2 className="md:text-2xl text-xl text-black dark:text-white font-bold mt-8 py-4">About this website</h2>
