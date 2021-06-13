@@ -8,7 +8,10 @@ import Seo from "../components/seo"
 const AboutPage = () => {
   return (
     <body>
-      <Seo title="About Me" />
+      <Seo 
+        title="About Me" 
+        description="Here's some facts about me."
+      />
       <Layout>
         <h1 className="md:text-5xl text-3xl text-black dark:text-white md:text-center font-bold mb-8 pb-4 border-b-2">About Me</h1>
         <div className="max-w-4xl mx-auto">

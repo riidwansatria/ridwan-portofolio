@@ -72,7 +72,14 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-robots-txt',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.ridwansatria.com',
+        sitemap: 'https://www.ridwansatria.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-postcss',

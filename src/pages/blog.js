@@ -27,7 +27,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <body className="bg-white">
       <Layout location={location} title={siteTitle}>
-        <Seo title="Blog" />
+        <Seo 
+          title="Blog" 
+          description="Browse through all of the articles I've written till this date"
+        />
         <h1 className="md:text-5xl text-3xl text-black font-bold mb-8 pb-4 border-b-2">Latest Posts</h1>
         
         <ol style={{ listStyle: `none` }}>

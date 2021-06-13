@@ -7,7 +7,10 @@ import Seo from "../components/seo"
 const ContactPage = () => {
   return (
     <body>
-      <Seo title="Contact" />
+      <Seo 
+        title="Contact" 
+        description="Contact me here. Either fill out the form on this page or through my social media"
+      />
       <Layout>
         <h1 className="md:text-5xl text-3xl text-black dark:text-white font-bold mb-8 pb-4 border-b-2">Contact</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-8">
