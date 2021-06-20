@@ -1,7 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -10,23 +8,10 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="Home" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
     <body className="bg-white">
       <Layout location={location} title={siteTitle}>
+      <Seo title = 'Home'/>
         <div>
           <div class="md:py-32 py-12">
               <div class="md:pb-20 pb-12 mx-auto text-left font-family-sans ">
@@ -47,7 +32,6 @@ const BlogIndex = ({ data, location }) => {
               </div>
           </div>
         </div>
-        <Seo title="Home" />
         <div className="mb-8 pb-4 border-b-2 flex justify-between items-center">
           <h2 className="md:text-4xl text-2xl font-semibold flex">📝 Latest Posts</h2>
           <div className="flex">

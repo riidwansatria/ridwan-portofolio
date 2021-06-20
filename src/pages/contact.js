@@ -22,7 +22,7 @@ const ContactPage = () => {
             <p><a href="mailto:ridwan@supergeografi.com" className="font-semibold m-2">ridwan@supergeografi.com</a></p>
             <div className="flex flex-wrap">
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://github.com/riidwansatria">Github</a>
-              <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://facebook.com/">Facebook</a>
+              <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://facebook.com/riidwansatria">Facebook</a>
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://www.instagram.com/riidwansatria/">Instagram</a>
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://www.linkedin.com/in/ridwansatria/">Linkedin</a>
               <a className="inline-flex bg-gray-800 text-white text-sm px-3 py-1 m-1 rounded-full object-center" href="https://twitter.com/riidwansatria">Twitter</a>

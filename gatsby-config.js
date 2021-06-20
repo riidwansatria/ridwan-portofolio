@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
