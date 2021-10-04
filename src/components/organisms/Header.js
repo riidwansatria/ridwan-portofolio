@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import logo from '/src/images/logo.png'
-import ContactIcons from '../components/contactIcons'
+import ContactIcons from '../atoms/contactIcons'
 
 const navigation = [
   { name: 'About', to: '/about', current: false },
@@ -16,7 +16,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Header() {
   return (
     <div>
       <Disclosure as="nav" className="">

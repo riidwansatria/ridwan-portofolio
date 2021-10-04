@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import data from '../data/social-media';
+import data from '../../utilities/social-media';
 
 const contactIcons = () => (
   <ul className="flex space-x-4 mr-0 ml-auto">

@@ -1,6 +1,6 @@
 // Step 1: Import your component
 import * as React from 'react'
-import Layout from "../components/layout"
+import Layout from "../components/templates/layout"
 import Seo from "../components/seo"
 
 // Step 2: Define your component
