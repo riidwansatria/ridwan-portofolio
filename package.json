@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "ridwan-portofolio",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Global Engineering student at Kyoto University 京都大学.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ridwan Satria <ridwan@supergeografi.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -20,6 +20,7 @@
     "@tailwindcss/forms": "^0.3.2",
     "@tailwindcss/typography": "^0.4.0",
     "gatsby": "^3.4.1",
+    "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-feed": "^3.4.0",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-google-gtag": "^3.7.1",
@@ -32,7 +33,6 @@
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-robots-txt": "^1.6.2",
     "gatsby-plugin-sharp": "^3.4.1",
-    "gatsby-plugin-sitemap": "^4.3.1",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-copy-linked-files": "^3.2.0",
     "gatsby-remark-images": "^4.2.0",
