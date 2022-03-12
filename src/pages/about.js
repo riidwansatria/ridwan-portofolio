@@ -10,7 +10,7 @@ const AboutPage = () => {
     <body>
       <Seo title="About Me" description="Here's some facts about me." />
       <Layout>
-        <h1 className="md:text-5xl text-3xl text-black dark:text-white md:text-center font-bold mb-8 pb-4 border-b-2">
+        <h1 className="md:text-5xl text-3xl text-black md:text-center font-bold mb-8 pb-4 border-b-2">
           About Me
         </h1>
         <div className="max-w-4xl mx-auto">
@@ -20,7 +20,7 @@ const AboutPage = () => {
             as my future career, I also do geography and web development as a
             hobby.
           </p>
-          <h2 className="md:text-2xl text-xl text-black dark:text-white font-bold mt-8 py-4">
+          <h2 className="md:text-2xl text-xl text-black font-bold mt-8 py-4">
             What I'm currently doing
           </h2>
           <ol className="md:text-lg text-md list-decimal prose px-8 max-w-none">
@@ -68,7 +68,7 @@ const AboutPage = () => {
             </li>
           </ol>
 
-          <h2 className="md:text-2xl text-xl text-black dark:text-white font-bold mt-8 py-4">
+          <h2 className="md:text-2xl text-xl text-black font-bold mt-8 py-4">
             About this website
           </h2>
           <p className="md:text-lg text-md prose max-w-none">

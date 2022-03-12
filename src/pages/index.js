@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.allContentfulBlogPost.nodes
 
   return (
     <body className="bg-white">
@@ -14,14 +14,14 @@ const BlogIndex = ({ data, location }) => {
         <div>
           <div class="md:py-32 py-12">
             <div class="md:pb-20 pb-12 mx-auto text-left font-family-sans ">
-              <h1 class="md:text-6xl text-3xl text-black dark:text-white font-bold mb-4">
+              <h1 class="md:text-6xl text-3xl text-blac font-bold mb-4">
                 <span className="text-2xl md:text-5xl text-gray-800">
                   Hey there! 👋{" "}
                 </span>
                 <br />
                 I'm Ridwan, Global Engineering student at Kyoto University
               </h1>
-              <p class="text-lg text-gray-600 dark:text-gray-400">
+              <p class="text-lg text-gray-600 text-gray-400">
                 Welcome to my personal website. This site will be used as a
                 platform to share my thoughts and showcase the projects that I’m
                 currently doing/I’ve done in the past.
@@ -50,27 +50,27 @@ const BlogIndex = ({ data, location }) => {
 
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
+            const title = post.title || post.slug
 
             return (
-              <li key={post.fields.slug}>
+              <li key={post.slug}>
                 <article
-                  className="post-list-item"
+                  className="post-list-item max-w-3xl"
                   itemScope
                   itemType="http://schema.org/Article"
                 >
                   <header>
-                    <h3 className="text-gray-800 md:text-2xl text-xl">
-                      <Link to={post.fields.slug} itemProp="url">
+                    <h3 className="text-gray-800 hover:text-gray-600 font-semibold md:text-2xl text-xl">
+                      <Link to={`/blog/${post.slug}`} itemProp="url">
                         <span itemProp="headline">{title}</span>
                       </Link>
                     </h3>
-                    <small>{post.frontmatter.date}</small>
+                    <small class="text-gray-400">{post.date}</small>
                   </header>
-                  <section className="pb-8">
+                  <section className="text-gray-500 text-sm pb-8">
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
+                        __html: post.description.description,
                       }}
                       itemProp="description"
                     />
@@ -110,20 +110,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
+    allContentfulBlogPost {
       nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
+        title
+        slug
+        description {
           description
         }
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
