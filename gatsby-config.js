@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -48,6 +48,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/images/uploads`,
       },
     },
     {
@@ -132,6 +139,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: "Ridwan Satria's RSS Feed",
           },
         ],
       },
@@ -157,8 +165,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-remark-images`,
-    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

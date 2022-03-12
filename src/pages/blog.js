@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/templates/layout"
 import Seo from "../components/seo"
 
-
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -25,12 +24,14 @@ const BlogIndex = ({ data, location }) => {
   return (
     <body className="bg-white">
       <Layout location={location} title={siteTitle}>
-        <Seo 
-          title="Blog" 
+        <Seo
+          title="Blog"
           description="Browse through all of the articles I've written till this date"
         />
-        <h1 className="md:text-5xl text-3xl text-black font-bold mb-8 pb-4 border-b-2">Latest Posts</h1>
-        
+        <h1 className="md:text-5xl text-3xl text-black font-bold mb-8 pb-4 border-b-2">
+          Latest Posts
+        </h1>
+
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
