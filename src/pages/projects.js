@@ -5,6 +5,8 @@ import Seo from "../components/seo"
 
 import edufia from '/src/images/projects-edufia.png'
 import supergeografi from '/src/images/projects-supergeografi.png'
+import bitlearn from '/src/images/projects-bitlearn.png'
+import ppiks from '/src/images/projects-ppiks.png'
 
 // Step 2: Define your component
 const ProjectsPage = () => {
@@ -22,21 +24,39 @@ const ProjectsPage = () => {
           Here's the collection of what I've been doing lately.
         </p>
         <ol className="grid grid-cols-4 sm:grid-cols-6 grid-flow-row-dense py-8 gap-4">
-          <li className="col-span-4 rounded">
+          <li className="col-span-4">
             <a href="https://supergeografi.com/">
               <img
                 src={supergeografi}
                 alt="supergeografi"
-                className="object-cover h-36 sm:h-48 w-full rounded-2xl"
+                className="object-cover h-36 sm:h-48 w-full rounded-2xl hover:ring-2 hover:ring-gray-800"
               />
             </a>
           </li>
-          <li className="col-span-2 rounded">
+          <li className="col-span-2">
             <a href="https://edufia.net/">
               <img
                 src={edufia}
                 alt="edufia"
-                className="object-cover h-36 sm:h-48 w-full rounded-2xl"
+                className="object-cover h-36 sm:h-48 w-full rounded-2xl hover:ring-2 hover:ring-violet-600"
+              />
+            </a>
+          </li>
+          <li className="col-span-2">
+            <a href="https://bitlearn.id/">
+              <img
+                src={bitlearn}
+                alt="bitlearn"
+                className="object-cover h-36 sm:h-48 w-full rounded-2xl hover:ring-2 hover:ring-green-600"
+              />
+            </a>
+          </li>
+          <li className="col-span-4">
+            <a href="https://ppikyotoshiga.com/">
+              <img
+                src={ppiks}
+                alt="ppiks"
+                className="object-cover h-36 sm:h-48 w-full rounded-2xl hover:ring-2 hover:ring-red-500"
               />
             </a>
           </li>

@@ -15,7 +15,7 @@ const AboutPage = () => {
         </h1>
         <div className="max-w-4xl mx-auto">
           <p className="md:text-lg text-md">
-            I’m currently a first-year undergraduate student at Kyoto University
+            I’m currently a second-year undergraduate student at Kyoto University
             Department of Global Engineering. While pursuing civil engineering
             as my future career, I also do geography and web development as a
             hobby.
@@ -25,7 +25,7 @@ const AboutPage = () => {
           </h2>
           <ol className="md:text-lg text-md list-decimal prose px-8 max-w-none">
             <li>
-              🏙️ I studied civil engineering as an{" "}
+              🏙️ I'm studying civil engineering as an{" "}
               <a href="https://www.s-ge.t.kyoto-u.ac.jp/int/en">
                 International Course Program
               </a>{" "}
@@ -60,7 +60,7 @@ const AboutPage = () => {
                 />
               </svg>{" "}
               I’m part of the Indonesian Students' Association in Japan (PPIJ),
-              serving in the website development division.
+              serving in the public relations division.
             </li>
             <li>
               🏫 I’m open to teach geography. I can be reached by email or
